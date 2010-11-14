@@ -5,7 +5,7 @@
 /*
     AtomicParsley - AtomicParsley.h
 
-    AtomicParsley is GPL software; you can freely distribute, 
+    AtomicParsley is GPL software; you can freely distribute,
     redistribute, modify & use under the terms of the GNU General
     Public License; either version 2 or its successor.
 
@@ -13,7 +13,7 @@
     any warranty; without the implied warranty of merchantability
     or fitness for either an expressed or implied particular purpose.
 
-    Please see the included GNU General Public License (GPL) for 
+    Please see the included GNU General Public License (GPL) for
     your rights and further details; see the file COPYING. If you
     cannot, write to the Free Software Foundation, 59 Temple Place
     Suite 330, Boston, MA 02111-1307, USA.  Or www.fsf.org
@@ -351,6 +351,10 @@ void APar_Extract_uuid_binary_file(AtomicInfo* uuid_atom,
 
 void APar_Print_APuuid_atoms(const char *path, char* output_path,
   uint8_t target_information);
+
+void APar_Print_iTunesData_JSON(const char *path, char* output_path,
+  uint8_t supplemental_info, uint8_t target_information,
+  AtomicInfo* ilstAtom = NULL);
 
 void APar_Print_iTunesData(const char *path, char* output_path,
   uint8_t supplemental_info, uint8_t target_information,
